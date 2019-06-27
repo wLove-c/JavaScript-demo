@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>vue-copy</title>
+</head>
+<body>
+<div></div>
+<!-- built files will be auto injected -->
+</body>
+<script>
+  const foo={
+    name:'foo',
+    getFoo(...args){
+      console.log('this===',this,'this.name==',this.name)
+      console.log('-----------------------------------')
+      console.log('...args=====',...args)
+    }
+  }
+  const bar={
+    name:'bar',
+    getBar(...args){
+      console.log('this===',this,'this.name==',this.name)
+      console.log('-----------------------------------')
+      console.log('...args=====',...args)
+    }
+  }
+  // foo.getFoo() //this=== {name: "foo", getFoo: ƒ} this.name== foo  ----------------------------------- ...args=====
+  // bar.getBar() //this=== {name: "bar", getBar: ƒ} this.name== bar  ----------------------------------- ...args=====
+  // foo.getFoo(bar.name)
+
+  /*=====================call================================*/
+
+  foo.getFoo.call(bar,'测试传参','测试call') //his=== {name: "bar", getBar: ƒ} this.name== bar ----------------------------------- ...args===== 测试传参 测试call
+
+	/*=====================apply================================*/
+
+  foo.getFoo.apply(bar,['测试传参','测试apply']) //his=== {name: "bar", getBar: ƒ} this.name== bar ----------------------------------- ...args===== 测试传参 测试apply
+	/*=====================bind================================*/
+  const foobindbar = foo.getFoo.bind(bar,'测试传参','测试apply')
+  // ƒ getFoo(...args){
+  //   console.log('this===',this,'this.name==',this.name)
+  //   console.log('-----------------------------------')
+  //   console.log('...args=====',...args)
+  // }
+  foobindbar('参数1', '参数2')
+  // foo.getFoo.call(bar,'测试传参','测试call')
+</script>
+</html>
