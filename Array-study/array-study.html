@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array-study</title>
+</head>
+<body>
+
+</body>
+<script>
+	// 引用类型数组
+  /*let arr = [1,2,3,4,5,6];
+  let arr1 = arr;
+  arr1.push(1)
+  console.log(arr,arr1)
+
+
+  // 引用类型对象
+
+  let obj = {a:1,b:2,c:3,d:4};
+  let obj1 = obj;
+  obj.b = 100;
+  console.log(obj,obj1)*/
+
+
+  /*============Array.concat()==============*/
+
+	/*let	arrNum = [1,2,3,4,5,6]
+	let	arrStr = ['1','2','3','4','5','6']
+	let	arrObj = [{a:1},{b:'2'}]
+	let	arrArr = [[1,2],['1','2']]
+ 	let arrAll =  arrNum.concat(arrStr).concat(arrObj).concat(arrArr)
+
+  arrArr[0].a=3;
+  arrArr[0][0] = 1000000
+  console.log(arrAll,arrObj,arrArr)*/
+
+  /*============Array.join()==============*/
+ /* let	arrNum = [1,2,3,4,5,6]
+  let	arrStr = ['1','2','3','4','5','6']
+  let	arrObj = [{a:1},{b:'2'}]
+  let	arrArr = [[1,2],['1','2']]
+  console.log(arrNum.join('|'))
+  console.log(arrStr.join(','))
+  console.log(arrObj.join('-'))
+  console.log(arrArr.join('='))*/
+  /*============Array.pop()==============*/
+ /* let	arrNum = [1,2,3,4,5,6]
+  let	arrStr = ['1','2','3','4','5','6']
+  let	arrObj = [{a:1},{b:'2'}]
+  let	arrArr = [[1,2],['1','2']]
+  console.log(arrNum.pop())
+  console.log(arrStr.pop())
+  console.log(arrObj.pop())
+  console.log(arrArr.pop())
+	console.log(arrNum,arrStr,arrObj,arrArr)*/
+
+  /*============Array.push()==============*/
+  /*let	arrNum = [1,2,3,4,5,6]
+  let	arrStr = ['1','2','3','4','5','6']
+  let	arrObj = [{a:1},{b:'2'}]
+  let	arrArr = [[1,2],['1','2']]
+	let arrAll = []
+  console.log(arrAll.push(arrNum))
+  console.log(arrAll.push(arrStr))
+  console.log(arrAll.push(arrObj))
+  console.log(arrAll.push(arrArr))
+  console.log('改变前===',arrAll)
+  arrNum[0] = 10000
+  arrStr[0] = 10000
+  arrObj[0] = 10000
+  arrArr[0] = 10000
+  console.log('改变后===',arrAll)*/
+
+  /*============Array.reverse()==============*/
+  /*let	arrNum = [1,2,3,4,5,6]
+  let	arrStr = ['1','2','3','4','5','6']
+  let	arrObj = [{a:1},{b:'2'}]
+  let	arrArr = [[1,2],['1','2']]
+  console.log(arrNum.reverse())
+  console.log(arrStr.reverse())
+  console.log(arrObj.reverse())
+  console.log(arrArr.reverse())*/
+  /*============Array.shift()==============*/
+  /* let	arrNum = [1,2,3,4,5,6]
+	let	arrStr = ['1','2','3','4','5','6']
+	let	arrObj = [{a:1},{b:'2'}]
+	let	arrArr = [[1,2],['1','2']]
+	console.log(arrNum.shift())
+	console.log(arrStr.shift())
+	console.log(arrObj.shift())
+	console.log(arrArr.shift())
+	console.log(arrNum,arrStr,arrObj,arrArr)*/
+  /*============Array.unshift()==============*/
+	/*let	arrNum = [1,2,3,4,5,6]
+	let	arrStr = ['1','2','3','4','5','6']
+	let	arrObj = [{a:1},{b:'2'}]
+	let	arrArr = [[1,2],['1','2']]
+	console.log(arrNum.unshift(1,2,3,4,5,6))
+	console.log(arrStr.unshift('1','2','3','4','5','6'))
+	console.log(arrObj.unshift({a:1},{b:'2'}))
+	console.log(arrArr.unshift([1,2],['1','2']))
+	console.log(arrNum,arrStr,arrObj,arrArr)*/
+  /*============Array.slice()==============*/
+  /*let	arrNum = [1,2,3,4,5,6]
+  let	arrStr = ['1','2','3','4','5','6']
+  let	arrObj = [{a:1},{b:'2'}]
+  let	arrArr = [[1,2],['1','2']]
+  console.log(arrNum.slice(0,1))
+  console.log(arrStr.slice(0,1))
+  console.log(arrObj.slice(0,1))
+  console.log(arrArr.slice(0,1))
+  console.log(arrNum,arrStr,arrObj,arrArr)*/
+  /*============Array.splice()==============*/
+  /*let	arrNum = [1,2,3,4,5,6]
+  let	arrStr = ['1','2','3','4','5','6']
+  let	arrObj = [{a:1},{b:'2'}]
+  let	arrArr = [[1,2],['1','2']]
+  console.log(arrNum.splice(-1,1,10000))
+  console.log(arrStr.splice(0,0,'10000'))
+  console.log(arrObj.splice(0,1))
+  console.log(arrArr.splice(0,1))
+  console.log(arrNum,arrStr,arrObj,arrArr)*/
+
+  /*============Array.sort()==============*/
+ /* let	arrNum = [6,2,1,1,3,4,5]
+  let	arrStr = ['6','2','1','3','4','5']
+  let	arrObj = [{b:'2'},{a:1}]
+  let	arrArr = [['2','1'],[2,1]]
+  console.log('arrNum',arrNum.sort())
+  console.log('arrStr',arrStr.sort())
+  console.log('arrObj',arrObj.sort())
+  console.log('arrArr',arrArr.sort())
+  console.log(arrNum,arrStr,arrObj,arrArr)
+	var arr = [1,2,4,3,2,1]
+
+	console.log(arr.sort(function (m,n) {
+    if (m < n) return -1
+   	if (m > n) return 1
+    if (m == n)return 0
+  }))*/
+  /*============Array.every()==============*/
+ /* //es6
+  let age = [10,20,30,40,50,22,26]
+  // 所有都满足才会返回true,否则返回false;
+  let result = age.every((item,index,array)=>{
+    console.log(item) // 10
+    console.log(index) // 0
+    console.log(array) //[10,20,30,40,50,22,26]
+
+    return item > 22;
+  })
+
+  // es5
+  // let result = age.every(function(item,index,array){
+  //     return item > 22;
+  // 	})
+  console.log(result) // false*/
+
+  /*============Array.some()==============*/
+  //es6
+  /*let age = [10,20,30,40,50,22,26]
+  // 所有都满足才会返回true,否则返回false;
+  let result = age.some((item,index,array)=>{
+
+    console.log(item) // 10 20 30
+    console.log(index) // 0 1 2
+    console.log(array) //[10,20,30,40,50,22,26]
+
+
+    return item > 22;
+  })
+
+  // es5
+  // let result = age.some(function(item,index,array){
+  //     return item > 22;
+  // 	})
+  console.log(result) // true*/
+
+</script>
+</html>
