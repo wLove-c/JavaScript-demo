@@ -195,7 +195,18 @@ arrayObject.slice(start,end)
 输出如下：
 ![Array.slice()](https://user-gold-cdn.xitu.io/2019/6/28/16b9d88a011b68d1?w=1008&h=540&f=png&s=99673)
 
-**注意:** 该方法并不会修改原数组，而是返回一个子数组
+**注意:** 该方法并不会修改原数组，而是返回一个子数组;灵活使用，可以用来深拷贝数组；如下:
+
+```javascript
+let arr = [1,2,3,4,5,6]
+let arr2 = arr.slice()
+console.log(arr2) // [1,2,3,4,5,6]
+arr2[0] = 10000;
+console.log(arr) // [1,2,3,4,5,6]
+console.log(arr2) // [10000,2,3,4,5,6]
+
+
+```
 
 ### 9. Array.splice()
 Array.splice() 方法向/从数组中添加/删除项目，然后返回被删除的项目。
