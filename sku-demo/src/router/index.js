@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import skuDemo from '@/components/skuDemo.vue'
+import skuDemo from '@/components/sku-demo.vue'
 
 Vue.use(Router)
 
