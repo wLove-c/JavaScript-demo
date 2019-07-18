@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import SkuDemo from '@/components/SkuDemo'
+import skuDemo from '@/components/skuDemo.vue'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'SkuDemo',
-      component: SkuDemo
+      name: 'skuDemo',
+      component: skuDemo
     }
   ]
 })
