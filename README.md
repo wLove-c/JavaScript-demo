@@ -10,3 +10,7 @@
 [call-bind-apply](https://github.com/wLove-c/JavaScript-demo/tree/master/call-bind-apply)
    
 -------
+
+
+#### 组件之间的多种通信方式
+[组件之间的多种通信communication](https://github.com/wLove-c/JavaScript-demo/tree/master/communication)
