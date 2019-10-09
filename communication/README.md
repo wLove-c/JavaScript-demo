@@ -5,23 +5,14 @@
 ## Build Setup
 
 ``` bash
+cd  ./communication
+
 # install dependencies
 npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
 @[TOC](vue组件之间如何通信？vue通信的多种方式)
 ### 前言:
@@ -478,8 +469,8 @@ methods: {
 
 
 ### 总结:
-万能通信: vuex、eventBus
-父子通信:\$refs 、 \$parent、\$children、provide/inject；
+万能通信: vuex、eventBus （无论是父级，兄弟，还是无关系组件皆可以通信）
+父子通信:\$refs 、 \$parent、 \$children、 provide/inject 、 \$attrs/ \$listeners； 
 
 本文Demo请转 [wLove-c](https://github.com/wLove-c/JavaScript-demo)
 楼主博客请转 [王一诺](https://wlove-c.github.io/)
