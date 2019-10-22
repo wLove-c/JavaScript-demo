@@ -14,3 +14,8 @@
 
 #### 组件之间的多种通信方式
 [组件之间的多种通信communication](https://github.com/wLove-c/JavaScript-demo/tree/master/communication)
+
+-------
+
+#### vue2.0源码实践
+[vue2.0源码实践](https://github.com/wLove-c/JavaScript-demo/tree/master/vue2.0test)
